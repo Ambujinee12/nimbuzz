@@ -6,7 +6,7 @@ const searchServiceName = process.env["hack-cs-kr"];
 
 // Create a SearchClient to send queries
 const client = new SearchClient(
-    `https://${searchServiceName}.search.windows.net/`,
+    `https://` + searchServiceName + `.search.windows.net/`,
     indexName,
     new AzureKeyCredential(apiKey)
 );

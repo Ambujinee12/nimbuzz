@@ -3,9 +3,9 @@
   "Values": {
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "SearchApiKey": "",
-    "SearchServiceName": "",
-    "SearchIndexName": "",
-    "SearchFacets": ""
+    "SearchApiKey": "8881CCF4FA00C0DA216C6C611D020161",
+    "SearchServiceName": "hack-cs-kr",
+    "SearchIndexName": "azureblob-index-p-id-drawings",
+    "SearchFacets": "location*,filetype*"
   }
 }

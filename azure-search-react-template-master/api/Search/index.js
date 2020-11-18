@@ -1,8 +1,8 @@
 const { SearchClient, AzureKeyCredential } = require("@azure/search-documents");
 
-const indexName = process.env["azureblob-index-p-id-drawings"];
-const apiKey = process.env["8881CCF4FA00C0DA216C6C611D020161"];
-const searchServiceName = process.env["hack-cs-kr"];
+const indexName = process.env["SearchIndexName"];
+const apiKey = process.env["SearchApiKey"];
+const searchServiceName = process.env["SearchServiceName"];
 
 // Create a SearchClient to send queries
 const client = new SearchClient(

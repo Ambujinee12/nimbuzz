@@ -33,7 +33,7 @@ export default function App() {
           .then(response => setUser(response))
           .catch(error => console.error('Error:', error));
       }
-       if (contentType && (contentType.indexOf("application/pdf"))  !== -1) {
+       else (contentType && (contentType.indexOf("application/pdf"))  !== -1) {
         response.pdf()
           .then(response => setUser(response))
           .catch(error => console.error('Error:', error));

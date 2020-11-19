@@ -42,7 +42,7 @@ export default function Details() {
         <div className="card-body">
           <h5 className="card-title">{document.metadata_storage_name}</h5>
           <p className="card-text">{document.filetype?.join('; ')} - {document.equipment}</p>
-          <p className="card-text"> PnID {document.PnID}</p>
+          <p className="card-text">PnID {document.PnID}</p>
           <p className="card-text">{document.metadata_storage_file_extension} Extension</p>
         </div>
       );

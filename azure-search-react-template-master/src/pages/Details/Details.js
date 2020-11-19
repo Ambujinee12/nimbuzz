@@ -38,11 +38,12 @@ export default function Details() {
     // View result
     if (selectedTab === 0) {
       resultStyle += " active";
-      detailsBody = (
-        <div className="card-body">
+       <div className="card-body">
           <h5 className="card-title">{document.metadata_storage_name}</h5>
+          <img className="image" src={document.file_path} alt="File Path"></img>
           <p className="card-text">{document.filetype?.join('; ')} - {document.equipment}</p>
           <p className="card-text">PnID {document.PnID}</p>
+          <Rating name="half-rating-read" value={parseInt(document.average_rating)} precision={0.1} readOnly></Rating>
           <p className="card-text">{document.metadata_storage_file_extension} Extension</p>
         </div>
       );

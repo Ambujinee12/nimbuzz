@@ -24,22 +24,23 @@ export default function App() {
   const [user, setUser] = useState({});
 
   // Fetch authentication API & set user state
-  async function fetchAuth() {
+ async function fetchAuth() {
     const response = await fetch("/.auth/me");
     if (response) {
       const contentType = response.headers.get("content-type");
-      if (contentType && (contentType.indexOf("application/json"))  !== -1) {
+      if (contentType && contentType.indexOf("application/json") !== -1) {
         response.json()
           .then(response => setUser(response))
           .catch(error => console.error('Error:', error));
       }
-       else (contentType && (contentType.indexOf("application/pdf"))  !== -1) {
+      else if (contentType && contentType.indexOf("application/pdf") !== -1) {
         response.pdf()
           .then(response => setUser(response))
           .catch(error => console.error('Error:', error));
       }
     }
   }
+
 
   // React Hook: useEffect when component changes
   // Empty array ensure this only runs once on mount

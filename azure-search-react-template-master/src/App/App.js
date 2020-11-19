@@ -28,8 +28,13 @@ export default function App() {
     const response = await fetch("/.auth/me");
     if (response) {
       const contentType = response.headers.get("content-type");
-      if (contentType && contentType.indexOf("application/json") !== -1) {
+      if (contentType && (contentType.indexOf("application/json"))  !== -1) {
         response.json()
+          .then(response => setUser(response))
+          .catch(error => console.error('Error:', error));
+      }
+       if (contentType && (contentType.indexOf("application/pdf"))  !== -1) {
+        response.pdf()
           .then(response => setUser(response))
           .catch(error => console.error('Error:', error));
       }

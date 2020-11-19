@@ -40,7 +40,7 @@ export default function Details() {
       resultStyle += " active";
       detailsBody = (
         <div className="card-body">
-          <h5 className="card-title">{document.Drawing_Sheet}</h5>
+          <h5 className="card-title">{document.metadata_storage_name}</h5>
           <img className="image" src={document.file_path} alt="File Path"></img>
           <p className="card-text">{document.filetype?.join('; ')} - {document.equipment}</p>
           <p className="card-text">PnID {document.PnID}</p>

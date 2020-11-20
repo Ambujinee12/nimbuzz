@@ -38,6 +38,7 @@ export default function Details() {
     // View result
     if (selectedTab === 0) {
       resultStyle += " active";
+      detailsBody = (
        <div className="card-body">
           <h5 className="card-title">{document.metadata_storage_name}</h5>
           <img className="image" src={document.file_path} alt="File Path"></img>

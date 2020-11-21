@@ -21,7 +21,7 @@ html, body {
 }
 
 .gif-container {
-  background: url('https://asgardia.space/crop/600x338/storage/blog/attachments/c9/ae/c9aed251433cf3fd455bae70a24d5e865533c1872e77c3bc7161de326ca269f7.gif') repeat-y 100% 100% fixed;
+  background: url('https://asgardia.space/crop/600x338/storage/blog/attachments/c9/ae/c9aed251433cf3fd455bae70a24d5e865533c1872e77c3bc7161de326ca269f7.gif') ;
   background-size: cover;
   height: 40%;
   width:100%;

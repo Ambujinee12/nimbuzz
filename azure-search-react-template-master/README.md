@@ -20,6 +20,18 @@ To run the sample locally, follow the steps below.
 - The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions?WT.mc_id=shopathome-github-jopapa) installed
 - The [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=shopathome-github-jopapa) installed
 
+### Building the Azure Functions
+
+With our search index and codebase in place, we’re ready to start building our application. The repo follows a pattern for Azure Static Web Apps that we’ll be using to build and deploy the application. The functions containing search logic can be found in the api folder.
+
+One important consideration when building an application is keeping your API keys secure. It’s a best practice to design our application in a way that your API keys aren’t accessible from the client.
+
+Azure Functions combined with the Azure SDKs are a simple and effective way to keep our keys out of users’ reach. These functions can also encapsulate any business logic you want to incorporate into the search experience such as security trimming or additional query proccesing.
+
+
+![Use this template screenshot](./images/20201008-basic-arch.png)
+
+
 ### Setup
 
 1. Clone (or Fork and Clone) this repository
@@ -41,6 +53,12 @@ The `local.settings.json` file holds all of the keys that the application needs.
   }
 }
 ```
+### Forking the repo
+
+To start off, select **Use this template** above. This will create your own copy of the code that you can deploy and edit as you please.
+
+![Use this template screenshot](./images/use-template.png)
+
 
 ## Run the app locally
 

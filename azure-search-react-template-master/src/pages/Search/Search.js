@@ -92,8 +92,9 @@ export default function Search() {
         </div>
         
       </div>
-    {body}
+    
     </main>
+    {body}
     </div>
   );
 }

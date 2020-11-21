@@ -90,9 +90,9 @@ export default function Search() {
           </div>
           <Facets facets={facets} filters={filters} setFilters={setFilters}></Facets>
         </div>
-        
+         {body}
       </div>
-    {body}
+   
     </main>
     
     </div>

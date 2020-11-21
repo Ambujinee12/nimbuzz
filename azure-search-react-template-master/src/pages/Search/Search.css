@@ -21,3 +21,13 @@
     margin-bottom: 1em;
     margin-top: 2em;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.gif-container {
+  background: url('https://i.pinimg.com/originals/b5/db/46/b5db46949d9005be06ebf248ab1dbb00.gif') center;
+  background-size: cover;
+  height: 100%;
+}

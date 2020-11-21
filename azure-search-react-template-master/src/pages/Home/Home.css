@@ -16,11 +16,13 @@
 }
 html, body {
     height: 100%;
+    width:100%;
     margin: 0;
 }
 
 .gif-container {
-  background: url('https://i.pinimg.com/originals/b5/db/46/b5db46949d9005be06ebf248ab1dbb00.gif') center;
+  background: url('https://i.pinimg.com/originals/b5/db/46/b5db46949d9005be06ebf248ab1dbb00.gif') repeat-y 100% 100% fixed;
   background-size: cover;
   height: 100%;
+  width:100%;
 }

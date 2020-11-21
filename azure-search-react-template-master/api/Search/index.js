@@ -65,6 +65,10 @@ module.exports = async function (context, req) {
         if (!q || q === "") {
             q = "*";
         }
+        
+        if(req.body.filters.length>0){
+            q = "";
+        }
 
         // Creating SearchOptions for query
         let searchOptions = {

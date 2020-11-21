@@ -24,11 +24,9 @@ To run the sample locally, follow the steps below.
 
 1. Clone (or Fork and Clone) this repository
 
-1. Rename the `api/local.settings.json.rename` file to `api/local.settings.json`.
+1. Open file  `api/local.settings.json` and fill required data.
 
 The `local.settings.json` file holds all of the keys that the application needs.
-
-For this sample, there is a search index using the [goodbooks-10k dataset](https://github.com/zygmuntz/goodbooks-10k) that that is publicly available using the connection information below. The index consists of 10,000 popular books that we'll search over in our application.
 
 ```json
 {

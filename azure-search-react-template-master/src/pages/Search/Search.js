@@ -80,9 +80,9 @@ export default function Search() {
   }
 
   return (
-    <div class="gif-container">
+    
     <main className="main main--search container-fluid">
-      
+      <div class="gif-container">
       <div className="row">
         <div className="col-md-3">
           <div className="search-bar">
@@ -92,9 +92,10 @@ export default function Search() {
         </div>
         
       </div>
-    
-    </main>
     {body}
+    
+    
     </div>
+    </main>
   );
 }

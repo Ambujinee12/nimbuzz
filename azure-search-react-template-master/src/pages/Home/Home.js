@@ -16,7 +16,7 @@ export default function Home() {
   }
 
   return (
-    <div class="gif-container"></div>
+    <div class="gif-container">
     <main className="main main--home">
       <div className="row home-search">
         <img className="logo" src="/images/cognitive-search.png" alt="Cognitive Search"></img>
@@ -24,6 +24,7 @@ export default function Home() {
         <SearchBar postSearchHandler={navigateToSearchPage}></SearchBar>
     
       </div>
+    </div>
     </main>
   );
 };

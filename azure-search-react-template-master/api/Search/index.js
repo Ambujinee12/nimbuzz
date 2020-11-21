@@ -66,9 +66,9 @@ module.exports = async function (context, req) {
             q = "*";
         }
         
-        if(req.body.filters.length>0){
-            q = "";
-        }
+        //if(req.body.filters.length>0){
+        //    q = "";
+        //}
 
         // Creating SearchOptions for query
         let searchOptions = {

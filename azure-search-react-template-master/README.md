@@ -92,11 +92,6 @@ This project can be run anywhere, but VS Code is required for local debugging.
 - A GitHub account
 - An Azure subscription
 
-### Forking the repo
-
-To start off, select **Use this template** above. This will create your own copy of the code that you can deploy and edit as you please.
-
-![Use this template screenshot](./images/use-template.png)
 
 ### Creating the web app
 

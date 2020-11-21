@@ -12,7 +12,7 @@ export default function Result(props) {
               <p> {props.document.equipment} </p>
               <p> {props.document.filetype} </p>
              <p> {props.document.metadata_storage_last_modified} </p>
-             <p> {props.document.drawing_number} </p>
+             
             </div>
         </a>
     </div>

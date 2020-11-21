@@ -16,8 +16,9 @@ export default function Home() {
   }
 
   return (
-    <div class="gif-container">
+    
     <main className="main main--home">
+    <div class="gif-container">
       <div className="row home-search">
         <img className="logo" src="/images/cognitive-search.png" alt="Cognitive Search"></img>
         <p className="poweredby lead">Powered by Azure Cognitive Search</p>
@@ -26,5 +27,6 @@ export default function Home() {
       </div>
     </div>
     </main>
+   
   );
 };

@@ -14,11 +14,14 @@
 .poweredby {
     text-align: center;
 }
-body {
-    background-image:url('images/ai-loader-opt.gif');
-    background-size:100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height:100%;
-    width:100%;
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.gif-container {
+  background: url('images/ai-loader-opt.gif') center;
+  background-size: cover;
+
+  height: 100%;
 }

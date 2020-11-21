@@ -16,11 +16,13 @@ export default function Home() {
   }
 
   return (
+    <div class="gif-container"></div>
     <main className="main main--home">
       <div className="row home-search">
         <img className="logo" src="/images/cognitive-search.png" alt="Cognitive Search"></img>
         <p className="poweredby lead">Powered by Azure Cognitive Search</p>
         <SearchBar postSearchHandler={navigateToSearchPage}></SearchBar>
+    
       </div>
     </main>
   );

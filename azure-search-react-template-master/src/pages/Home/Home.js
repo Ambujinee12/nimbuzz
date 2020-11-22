@@ -21,7 +21,7 @@ export default function Home() {
     
       <div className="row home-search">
         <img className="logo" src="/images/cognitive-search.png" alt="Cognitive Search"></img>
-        <p className="poweredby lead"><strong>Powered by Azure Cognitive Search</strong></p>
+        <p className="poweredby lead"><strong>Find Any Of Your Document Here</strong></p>
         <SearchBar postSearchHandler={navigateToSearchPage}></SearchBar>
     
       </div>

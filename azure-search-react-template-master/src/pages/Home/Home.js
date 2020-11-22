@@ -16,7 +16,7 @@ export default function Home() {
   }
 
   return (
-    <div class="gif-container">
+    
     <main className="main main--home">
     
       <div className="row home-search">
@@ -26,8 +26,6 @@ export default function Home() {
     
       </div>
     </main>
-    </div>
-    
-   
+       
   );
 };

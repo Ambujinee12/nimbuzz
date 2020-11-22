@@ -15,7 +15,7 @@ export default function Result(props) {
                    <p >Location : {props.document.location} </p>
                   <p >Equipment : {props.document.equipment} </p>
                   <p >Filetype : {props.document.filetype} </p>
-                 <p >Last Modified : {props.document.metadata_storage_last_modified}</p>      
+                    
         </div>
 </div>
 

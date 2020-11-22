@@ -31,7 +31,7 @@ export default function Result(props) {
       </Card.Text>
     </Card.Body>
   </Card>
-));
+))
     );
 }
 

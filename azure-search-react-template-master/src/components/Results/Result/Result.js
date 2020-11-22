@@ -4,34 +4,21 @@ import './Result.css';
 
 export default function Result(props) {
     return(
-        
-       [
-  'Info'
-  
-].map((variant, idx) => (
-  <Card
-    bg={variant.toLowerCase()}
-    key={idx}
-    text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-    style={{ width: '18rem' }}
-    className="mb-2"
-  >
-    <Card.Header> <a href={`${props.document.file_path}`}>
+    <div className="card result"> 
+    <a href={`${props.document.file_path}`}>
             <div className="card-header">
                 <h6 className="title-style">{props.document.metadata_storage_name}</h6>
             </div>
-        </a> </Card.Header>
+        </a>
 
-    <Card.Body>
-      <Card.Text>
-                  <p> Location : {props.document.location} </p>
-                  <p> Equipment : {props.document.equipment} </p>
-                  <p> Filetype : {props.document.filetype} </p>
-                  <p> Last Modified : {props.document.metadata_storage_last_modified}</p>     
-      </Card.Text>
-    </Card.Body>
-  </Card>
-))
+    <div className="card-body">
+                   <p >Location : {props.document.location} </p>
+                  <p >Equipment : {props.document.equipment} </p>
+                  <p >Filetype : {props.document.filetype} </p>
+                 <p >Last Modified : {props.document.metadata_storage_last_modified}</p>      
+        </div>
+</div>
+
     );
 }
 

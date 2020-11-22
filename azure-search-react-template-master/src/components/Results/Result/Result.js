@@ -5,17 +5,19 @@ import './Result.css';
 export default function Result(props) {
     return(
     <div className="card result">
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
         <a href={`${props.document.file_path}`}>
-            <div className="card-body">
+            <div className="card-header">
                 <h6 className="title-style">{props.document.metadata_storage_name}</h6>
    </div>
         </a>
-               <p> {props.document.location} </p>
-              <p> {props.document.equipment} </p>
-              <p> {props.document.filetype} </p>
-             <p> {props.document.metadata_storage_last_modified} </p>
-             
-         
+ <div class="card-body">
+               <p class="card-text">Location : {props.document.location} </p>
+              <p class="card-text"> Equipment : {props.document.equipment} </p>
+              <p class="card-text"> Filetype : {props.document.filetype} </p>
+             <p class="card-text"> Last Modified : {{{props.document.metadata_storage_last_modified}|date:'d M Y' }}</p>      
     </div>
+</div>
+</div>
     );
 }

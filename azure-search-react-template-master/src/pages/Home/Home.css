@@ -14,15 +14,3 @@
 .poweredby {
     text-align: center;
 }
-html, body {
-    height: 100%;
-    width:100%;
-    margin: 0;
-}
-
-.gif-container {
-  background: url('https://asgardia.space/crop/600x338/storage/blog/attachments/c9/ae/c9aed251433cf3fd455bae70a24d5e865533c1872e77c3bc7161de326ca269f7.gif') ;
-  background-size: cover;
-  height: 40%;
-  width:100%;
-}

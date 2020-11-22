@@ -24,10 +24,10 @@ export default function Result(props) {
 
     <Card.Body>
       <Card.Text>
-                  <p className="card-text">Location : {props.document.location} </p>
-                  <p className="card-text">Equipment : {props.document.equipment} </p>
-                  <p className="card-text">Filetype : {props.document.filetype} </p>
-                 <p className="card-text">Last Modified : {props.document.metadata_storage_last_modified}</p>     
+                  <p> Location : {props.document.location} </p>
+                  <p> Equipment : {props.document.equipment} </p>
+                  <p> Filetype : {props.document.filetype} </p>
+                  <p> Last Modified : {props.document.metadata_storage_last_modified}</p>     
       </Card.Text>
     </Card.Body>
   </Card>
